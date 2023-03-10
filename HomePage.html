@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pharmacy</title>
+    <style>
+        #mainh1 {
+            background-color: rgba(81, 78, 78, 0.962);
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #subh1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: grey;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: black;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            /*whatever size you want your container*/
+            /*border: 3px solid teal;*/
+            display: flex;
+            /*Make sure to call this on your container*/
+            align-items: stretch;
+            justify-content: space-around;
+            /*stretches all cards same height*/
+            /*justify-content: space-around;*/
+            /*some space between cards*/
+        }
+
+        .card {
+            width: 230px;
+            height: 230px;
+            /*or whatever size card you want*/
+            /*border: 2px solid red;*/
+            box-shadow: 0 0px 20px 0 rgba(247, 222, 241, 0.59);
+            padding:8px;
+        }
+
+        .card-image {
+            width: 60%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .button{
+            color: goldenrod;
+            width:100%;
+            border-color:dodgerblue;
+            border-radius:8px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainh1"><b>Pharmacy</b></div>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li class=dropdown>
+            <a href="javascript:void(0)" class="dropbtn">Our Medicines</a>
+            <div class="dropdown-content">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cold and Cough</a>
+            </div>
+        </li>
+        <li class=dropdown>
+            <a href="javascript:void(0)" class="dropbtn">Health Care</a>
+            <div class="dropdown-content">
+                <a href="#">Baby care</a>
+                <a href="#">Skin care</a>
+                <a href="#">Home care</a>
+                <a href="#">Personal care</a>
+                <a href="#">Pet care</a>
+            </div>
+        </li>
+        <li><a href="LabForm.html">Lab Test</a></li>
+    </ul>
+
+    <h3>Covid Care</h3>
+    <div class="container">
+
+        <div class="card">
+            <b>Covid Test Kit</b>
+            <img src="c1.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 40
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Covid Essentials</b>
+            <img src="c2.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 240
+                <br>Offer:Rs.170/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Sanitizer bottle</b>
+            <img src="c3_1.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 99
+                <br>Offer:Rs.87/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Mask</b>
+            <br><img src="c4.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 45
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+    </div>
+
+    <h3>Diabetes Care</h3>
+    <div class="container">
+        <div class="card">
+            <b>Mask</b>
+            <br><img src="d1.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 45
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Mask</b>
+            <br><img src="d2.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 45
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Mask</b>
+            <br><img src="d3.jpg" alt="c1" class="card-image">
+            <div style="color: blue">
+                Rs 45
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit" class = "button"><b>Add to cart</b></button>
+        </div>
+
+        <div class="card">
+            <b>Mask</b>
+            <br><img src="d4.png" alt="c1" syle="width: 30%;height: 150px;object-fit:cover">
+            <div style="color: blue">
+                <br><br><br><br>Rs 35
+                <br>Offer:Rs.30/-
+            </div>
+            <button type = "submit"  class = "button"><b>Add to cart</b></button>
+        </div>
+
+    </div>
+
+    <div id="subh1">@copyright. Only for demonstration purposes</div>
+</body>
+
+</html>

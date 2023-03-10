@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .splitdiv {
+            height: 100%;
+            width: 50%;
+        }
+
+        #leftdiv {
+            float: left;
+        }
+
+        #leftdivcard {
+            margin: 0;
+            width: 80%;
+        }
+
+        #rightdiv {
+            float: right;
+        }
+
+        #rightdivcard {
+            margin: 0;
+            width: 50%;
+        }
+
+        input[type=text] {
+            padding: 12px 12px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid grey;
+            padding-right: 30px;
+        }
+
+        input::placeholder {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .button {
+            background-color: deepskyblue;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            font-size: 20px;
+            
+        }
+        .buttonPosition{
+            text-align: center;
+            display: inline-block;
+            position: absolute;
+            top: 135%;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 100%;width:100%;display: inline-block;">
+
+        <div class="splitdiv" id="leftdiv">
+            <div id="leftdivcard">
+
+                <form id="form1" method="get">
+                    <h1>1. Your Contact Details</h1>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                    <input type="text" id="pid" name="pid" placeholder="Patient Id if exists">
+                    <br><br><br>
+                    <input type="text" id="cno" name="cno" placeholder="Contact Number">
+                    <input type="text" id="eid" name="eid" placeholder="Email Id">
+                    <br><br><br><br><br>
+                    <h1>2. Address</h1>
+                    <input type="text" id="cno" name="cno" placeholder="H-No">
+                    <input type="text" id="eid" name="eid" placeholder="Street">
+                    <br><br>
+                    <h3>District: </h3><br> <select name="district" id="district">
+                        <option value="" selected="selected">Please select District</option>
+                    </select>
+                    <br><br>
+                    <h3>Test Type: </h3><input type="checkbox" name="checkbox" id="checkbox" value="" checked>
+                    <label for="checkbox">CBC</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="">
+                    <label for="checkbox">Complete Urine</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="">
+                    <label for="checkbox">Lipid Profile</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="">
+                    <label for="checkbox">Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="">
+                    <label for="checkbox">Glucose Test</label><br>
+                    <h3>Do you want a hard copy of the report also</h3>
+                    <input type="radio" name="radiobox" id="radiobox" value="">
+                    <label for="checkbox">Yes</label><br>
+                    <input type="radio" name="radiobox" id="radiobox" value="">
+                    <label for="checkbox">No</label><br><br>
+                    <label for="date"><b>Date</b></label>
+                    <input type="date" name="date" id="date" value="">
+                    <br><br>
+                    <label for="time"><b>Time</b></label>
+                    <input type="time" name="time" id="time" value="">
+                    <br><br>
+                    <div class = "buttonPosition">
+                    <button class="button" type="button" form="form1" value="submit">Submit</button>
+                    <button class="button" type="reset" value="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="splitdiv" id="rightdiv">
+            <div class="rightdivcard">
+                <img src="lab-test.jpg" alt="lab" width=auto height=auto>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
